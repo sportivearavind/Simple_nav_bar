@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url('car.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    background: white;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
